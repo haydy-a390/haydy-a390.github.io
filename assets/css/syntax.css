@@ -2,7 +2,8 @@ body {
     padding-top: 5rem;
 }
 
-.jumbotron {
-    background-image: url("{{ site.url }}/assets/images/backgroundimage.jpg");
+.jumbotron{
+    background-image: url('assets/images/backgroundimage.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
