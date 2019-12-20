@@ -1,10 +1,57 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
-<h1>Projects</h1>
-<p>The following are projects that I have completed or am still currently building upon and improving.</p>
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    {% if site.highlighter %}
+    <link href='{{ site.url }}/assets/css/syntax.css' rel='stylesheet' type='text/css'>
+    {% endif %}
+
+    <title>
+        {% if page.title %}
+        {{ page.title }}
+        {% else %}
+        {{ site.name }} &mdash; {{ site.description }}
+        {% endif %}
+    </title>
+</head>
+<body>
 
 
+<div class="container">
+    {% include header.html %}
+    <main role="main">
 
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        {{ content }}
 
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                {% include project1.html %}
+                {% include project2.html %}
+                {% include project3.html %}
+            </div>
+            <hr>
+        </div> <!-- /container -->
+    </main>
+    {% include footer.html %}
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
