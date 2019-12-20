@@ -309,6 +309,7 @@ p {
 .footer {
     padding: 30px;
     padding-top: 60px;
+    text-align: center;
 }
 
 .footer .copyright {
