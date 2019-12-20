@@ -255,12 +255,12 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    color: #dee2e6cc;
+    color: #ffffff;
 }
 
 .main-wrapper .company {
     margin-bottom: 10px;
-    color: #dee2e6cc;
+    color: #ffffff;
 }
 
 .main-wrapper .project-title {
@@ -333,6 +333,7 @@ p {
         position: static;
         display: block;
         margin-top: 5px;
+        color: #ffffff;
     }
     .main-wrapper .upper-row {
         margin-bottom: 0;
